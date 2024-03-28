@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.page {
+    min-width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.pairs-game {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 45px;
+}
+
+.form {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid rgb(186, 182, 182);
+    border-radius: 10px;
+}
+
+.input {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:#516fbd;
+    color: #fff;
+}
+
+.list {
+    --cards-count: 4;
+    --gap: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid rgb(186, 182, 182);
+    border-radius: 10px;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / var(--cards-count) - var(--gap) * (var(--cards-count) - 1) / var(--cards-count));
+    height: 100px;
+    border-radius: 10px;
+    font-size: 0;
+    background-color: #516fbd;
+    color: transparent;
+}
+
+.card:hover {
+    background-color: #84a5f8;
+    color: #fff
+}
+
+.card:active {
+    background-color: #23418c;
+    color: #fff
+}
+
+.open {
+    background-color: #23418c;
+    color: #fff;
+    font-size: 36px;
+}
+
+.open:hover {
+    background-color: #23418c;
+}
+
+.open:active {
+    background-color: #23418c;
+}
+
+.success {
+    background-color: #8adb91;
+    color: #4d763e;
+    font-size: 36px;
+}
+
+.success:hover {
+  background-color: #8adb91;
+  color: #4d763e;
+}
+
+.success:active {
+    background-color: #8adb91;
+    color: #4d763e;
+}
